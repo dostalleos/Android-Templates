@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/fragment_instagram_photo_picker_grid_item"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingLeft="@dimen/global_metric_4"
+	android:paddingRight="@dimen/global_metric_4"
+	android:paddingTop="@dimen/global_metric_4">
+
+	<LinearLayout
+		android:id="@+id/fragment_instagram_photo_picker_grid_item_1"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:background="@drawable/selector_view_listview_item_bg">
+
+		<com.example.view.SquareImageView
+			android:id="@+id/fragment_instagram_photo_picker_grid_item_photo_1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="@dimen/global_metric_4"
+		android:layout_height="match_parent"/>
+
+	<LinearLayout
+		android:id="@+id/fragment_instagram_photo_picker_grid_item_2"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:background="@drawable/selector_view_listview_item_bg">
+
+		<com.example.view.SquareImageView
+			android:id="@+id/fragment_instagram_photo_picker_grid_item_photo_2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="@dimen/global_metric_4"
+		android:layout_height="match_parent"/>
+
+	<LinearLayout
+		android:id="@+id/fragment_instagram_photo_picker_grid_item_3"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:background="@drawable/selector_view_listview_item_bg">
+
+		<com.example.view.SquareImageView
+			android:id="@+id/fragment_instagram_photo_picker_grid_item_photo_3"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"/>
+
+	</LinearLayout>
+
+</LinearLayout>
