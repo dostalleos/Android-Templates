@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:animateLayoutChanges="true">
+
+	<FrameLayout
+		android:id="@+id/container_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ListView
+			android:id="@android:id/list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/global_bg_front"
+			android:cacheColorHint="@color/view_listview_cache_color_hint"
+			android:divider="@null"
+			android:dividerHeight="0dp"
+			android:drawSelectorOnTop="false"
+			android:fastScrollEnabled="false"
+			android:listSelector="@android:color/transparent"/>
+
+		<include
+			android:id="@android:id/empty"
+			layout="@layout/placeholder_empty"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+	</FrameLayout>
+
+	<include
+		android:id="@+id/container_progress"
+		layout="@layout/placeholder_progress"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"/>
+
+	<include
+		android:id="@+id/container_offline"
+		layout="@layout/placeholder_offline"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"/>
+
+</FrameLayout>

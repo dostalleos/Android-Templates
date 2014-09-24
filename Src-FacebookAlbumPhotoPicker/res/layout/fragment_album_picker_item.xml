@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingTop="@dimen/global_metric_8"
+	android:paddingBottom="@dimen/global_metric_8"
+	android:paddingLeft="@dimen/global_metric_12"
+	android:paddingRight="@dimen/global_metric_12"
+	android:background="@drawable/selector_view_listview_item_bg">
+
+	<FrameLayout
+		android:layout_width="@dimen/global_metric_48"
+		android:layout_height="@dimen/global_metric_48"
+		android:layout_marginRight="@dimen/global_metric_12"
+		android:layout_gravity="bottom">
+
+		<ImageView
+			android:id="@+id/fragment_album_picker_item_photo"
+			android:layout_width="@dimen/global_metric_48"
+			android:layout_height="@dimen/global_metric_48"
+			android:scaleType="centerCrop"/>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:src="@drawable/photo_overlay"/>
+
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/fragment_album_picker_item_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:textSize="@dimen/global_text_16"
+		android:textColor="@color/global_text_primary"
+		android:paddingLeft="@dimen/global_metric_8"/>
+
+</LinearLayout>
